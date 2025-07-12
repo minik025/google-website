@@ -1,0 +1,138 @@
+/*Kendi Profilim*/
+.img {
+  text-align: center;    
+  max-width: 100%;
+}
+.img img {
+    width: 120px;            /*Resmin boyutu*/
+    margin: 0 auto;          /*Resmi yatay ortalar*/
+    margin-top: 15px;
+}
+/*9 Kare oluşturma*/
+.dot-grid { 
+  display: grid;                            /*konteyner yapar,kutu gibi hizalar*/
+  grid-template-columns: repeat(3, 20px);    /* 3 sütun, her biri 20px genişlik */
+  grid-gap: 5px;                             /* Kareler arası boşluk */
+  width: max-content;    
+  margin: 20px auto;                          /* Ortalamak için */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: black;               /* Siyah kare */
+  border-radius: 3px;                    /*kenarlardan yumusatma*/
+}
+/*Linkler*/
+.link {
+  text-align: center;                   /*Linki ortalar*/
+}
+
+.link a {
+  display: block;
+  text-decoration: none;    /* Normalde alt çizgi yok */
+  color: black;
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.link a:hover,
+.link a:focus,
+.link a:active {
+  text-decoration: underline;  /* Alt çizgi göster */
+}
+
+/*Logo*/
+.logo {
+  margin-top: 200px;      /*üst dış boşluk*/
+  margin-bottom: 50px;   /*alt dış boşluk*/
+  text-align: center;
+}
+.search-container {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+  transition: box-shadow 0.3s ease;
+}
+
+.search-container:hover,
+.search-container:focus-within,
+.search-container:active {
+  box-shadow: -1px 41px 94px -2px rgba(224, 218, 218, 0.8);
+  -webkit-box-shadow: -1px 41px 94px -2px rgba(99, 91, 91, 0.8);
+  -moz-box-shadow: -1px 41px 94px -2px rgba(99, 91, 91, 0.8);
+}
+
+.icon-image,
+.microphone-img {
+  width: 50px;
+  height: 50px;
+  margin: 0 15px;
+  /* float kaldırıldı */
+}
+
+.search-input {
+  width: 480px;
+  height: 50px;
+  outline: none;
+  font-size: 24px;
+  cursor: text;
+  margin-left: 5px;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 3px solid black;
+  flex-shrink: 1;
+}
+
+.buttons {
+  width: 130px;
+  height: 36px;
+  margin: 40px 10px;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;  /* Yatayda ortalar */
+  gap: 20px;                /* Butonlar arası boşluk */
+  margin-top: 20px;         /* Üst boşluk */
+}
+footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between; /* SAĞ-SOL dağıtım */
+  align-items: center;
+  flex-wrap: wrap; /* Ekran daralırsa alt alta iner */
+  max-width: 100%; /* geniş ekran için sınırlama */
+  margin: 0 auto; /* ortala */
+  padding-bottom: 0%;
+}
+
+.footer-list {
+  list-style: none; /* Noktaları kaldır */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* linkler arası boşluk */
+}
+
+.footer-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.footer-list li a:hover {
+  text-decoration: underline;
+}
+
